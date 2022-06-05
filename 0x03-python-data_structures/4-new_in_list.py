@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
 def new_in_list(my_list, idx, element):
-    """Replace an element in a copied list at a specific position."""
-    if idx < 0 or idx > (len(my_list) - 1):
-        return (my_list)
-
-    copy = [x for x in my_list]
-    copy[idx] = element
-    return (copy)
-© 2022 GitHub, Inc.
+    copy = my_list.copy()
+    for x in my_list:
+        if idx == my_list.index(x):
+            copy[idx] = element
+            return (copy)
+        elif idx >= len(my_list):
+            return (copy)
+        elif idx < 0:
+            return (copy)
