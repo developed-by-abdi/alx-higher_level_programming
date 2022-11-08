@@ -11,5 +11,4 @@ request(starWarsUri, function (_err, _res, body) {
       console.log(JSON.parse(cBody).name);
     });
   }
-  
 });

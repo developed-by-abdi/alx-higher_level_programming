@@ -22,5 +22,4 @@ request(process.argv[2], function (err, _res, body) {
 
     console.log(completedTasksByUsers);
   }
-  
 });
